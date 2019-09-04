@@ -3,13 +3,15 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  /* animation: App-logo-spin infinite 50s linear; */
+  height: 200px;
+  margin: auto;
+  display: block;
 }
 
 .App-header {
   background-color: #222;
-  height: 50px;
+  height: 100px;
   padding: 20px;
   color: white;
   text-align: left;
@@ -17,7 +19,6 @@
   font-size: 1em;
   font-weight: bold;
 }
-
 .App-title {
   font-size: 1.5em;
 }
@@ -54,4 +55,8 @@ tr {
 
 .card {
   width: 18rem;
+  margin-top: 145px;
+}
+.card-body {
+  text-align: center;
 }
