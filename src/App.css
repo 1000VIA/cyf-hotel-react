@@ -1,5 +1,7 @@
 .App {
   text-align: left;
+  margin: 0px;
+  padding: 0px;
 }
 
 .App-logo {
@@ -50,7 +52,20 @@ tr {
 
 .footer {
   padding-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
   text-align: center;
+  background: #457fca; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .card {
@@ -58,5 +73,21 @@ tr {
   margin-top: 145px;
 }
 .card-body {
+  text-align: center;
+}
+.classUl {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 0px;
+}
+li {
+  margin-top: 30px;
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
   text-align: center;
 }

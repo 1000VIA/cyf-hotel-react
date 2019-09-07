@@ -5,7 +5,7 @@ const Heading = () => {
     <header className="App-header">
       CYF Hotel
       <img
-        src="https://www.gifmaniacos.es/wp-content/uploads/2019/06/buhos-lechuzas-gifmaniacos.es-19.gif"
+        src="https://i.pinimg.com/originals/3a/f3/cd/3af3cd437a6c52529c5592cb91602ee8.gif"
         alt=""
         className="App-logo"
       />
