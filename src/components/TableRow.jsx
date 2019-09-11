@@ -2,11 +2,26 @@ import React, { Component } from "react";
 import moment from "moment";
 
 class TableRow extends Component {
+  constructor() {
+    super();
+    this.state = {
+      selected: false
+    };
+  }
+
+  handleClick = () => {
+    this.setState(previusState => {
+      return { selected: !previusState.selected };
+    });
+  };
   render() {
     const arrayInfo = this.props.infoJSON;
     return arrayInfo.map(name => {
       return (
-        <tr>
+        <tr
+          className={this.state.selected ? "changeColor" : ""}
+          onClick={this.handleClick}
+        >
           <th scope="row">{name.id}</th>
           <td key={name.id}>{name.title}</td>
           <td key={name.id}>{name.firstName}</td>
