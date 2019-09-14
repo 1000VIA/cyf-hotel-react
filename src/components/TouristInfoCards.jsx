@@ -7,6 +7,7 @@ const TouristInfoCards = () => {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/0/05/Estambul-Turquia9857.JPG"
           className="card-img-top"
+          alt="img"
         />
         <div className="card-body">
           <a href="https://peoplemakeglasgow.com/" className="btn btn-primary">
@@ -18,6 +19,7 @@ const TouristInfoCards = () => {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/0/05/Estambul-Turquia9857.JPG"
           className="card-img-top"
+          alt="img"
         />
         <div className="card-body">
           <a
@@ -32,6 +34,7 @@ const TouristInfoCards = () => {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/0/05/Estambul-Turquia9857.JPG"
           className="card-img-top"
+          alt="img"
         />
         <div className="card-body">
           <a href="https://visitlondon.com/" className="btn btn-primary">

@@ -11,8 +11,10 @@ const Footer = () => {
     <div className="container col-12 footer">
       <h3>Contactus Us</h3>
       <ul className="row col-10 classUl">
-        {footerInfContactus.map(footerInfContactus => (
-          <li className="li">{footerInfContactus}</li>
+        {footerInfContactus.map((footerInfContactus, index) => (
+          <li className="li" key={index}>
+            {footerInfContactus}
+          </li>
         ))}
       </ul>
     </div>

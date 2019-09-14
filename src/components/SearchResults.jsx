@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import FakeBookings from "../data/fakeBookings.json";
+// import FakeBookings from "../data/fakeBookings.json";
 import TableRow from "./TableRow";
 
 class SearchResults extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <table class="table table-dark">
+        <table className="table table-dark">
           <thead>
             <tr>
               <th scope="col">id</th>
@@ -21,7 +21,7 @@ class SearchResults extends Component {
             </tr>
           </thead>
           <tbody>
-            <TableRow infoJSON={FakeBookings} />
+            <TableRow infoJSON={this.props.infoJSON} />
           </tbody>
         </table>
       </div>

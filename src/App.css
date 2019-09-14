@@ -5,13 +5,17 @@
 }
 
 .App-logo {
-  /* animation: App-logo-spin infinite 50s linear; */
+  animation: App-logo-spin infinite 10s cubic-bezier(0.62, -0.01, 0.03, 0.02);
   height: 200px;
-  margin: auto;
-  display: block;
+}
+.class-img {
+  display: flex;
+  justify-content: center;
 }
 
 .App-header {
+  display: flex;
+  justify-content: space-between;
   background-color: #222;
   height: 100px;
   padding: 20px;
@@ -70,7 +74,7 @@ tr {
 
 .card {
   width: 18rem;
-  margin-top: 145px;
+  margin-top: 30px;
 }
 .card-body {
   text-align: center;

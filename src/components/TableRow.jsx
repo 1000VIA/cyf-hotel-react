@@ -5,32 +5,38 @@ class TableRow extends Component {
   constructor() {
     super();
     this.state = {
-      selected: false
+      selected: false,
+      currentIndex: -1
     };
   }
 
-  handleClick = () => {
+  handleClick = index => {
+    console.log(this.state);
+
     this.setState(previusState => {
-      return { selected: !previusState.selected };
+      return { currentIndex: previusState.currentIndex === index ? -1 : index };
     });
   };
   render() {
     const arrayInfo = this.props.infoJSON;
-    return arrayInfo.map(name => {
+    return arrayInfo.map((name, index) => {
       return (
         <tr
-          className={this.state.selected ? "changeColor" : ""}
-          onClick={this.handleClick}
+          key={name.id}
+          className={this.state.currentIndex === index ? "changeColor" : ""}
+          onClick={() => {
+            this.handleClick(index);
+          }}
         >
           <th scope="row">{name.id}</th>
-          <td key={name.id}>{name.title}</td>
-          <td key={name.id}>{name.firstName}</td>
-          <td key={name.id}>{name.surname}</td>
-          <td key={name.id}>{name.email}</td>
-          <td key={name.id}>{name.roomId}</td>
-          <td key={name.id}>{name.checkInDate}</td>
-          <td key={name.id}>{name.checkOutDate}</td>
-          <td key={name.id}>
+          <td>{name.title}</td>
+          <td>{name.firstName}</td>
+          <td>{name.surname}</td>
+          <td>{name.email}</td>
+          <td>{name.roomId}</td>
+          <td>{name.checkInDate}</td>
+          <td>{name.checkOutDate}</td>
+          <td>
             {moment(name.checkOutDate).diff(moment(name.checkInDate), "days")}
           </td>
         </tr>
