@@ -6,7 +6,7 @@ class SearchResults extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <table className="table table-dark">
+        <table className="table table-bordered table-dark">
           <thead>
             <tr>
               <th scope="col">id</th>

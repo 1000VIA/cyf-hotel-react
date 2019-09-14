@@ -13,7 +13,7 @@ class Bookings extends Component {
 
   search = searchVal => {
     let filtersFirstName = this.state.infoJSON.filter(
-      name => searchVal == name.firstName || searchVal == name.surname
+      name => searchVal === name.firstName || searchVal === name.surname
     );
     console.log(filtersFirstName);
 

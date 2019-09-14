@@ -11,8 +11,6 @@ class TableRow extends Component {
   }
 
   handleClick = index => {
-    console.log(this.state);
-
     this.setState(previusState => {
       return { currentIndex: previusState.currentIndex === index ? -1 : index };
     });
